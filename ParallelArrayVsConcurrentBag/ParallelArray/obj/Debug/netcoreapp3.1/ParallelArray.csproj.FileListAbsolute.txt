@@ -1,0 +1,13 @@
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\bin\Debug\netcoreapp3.1\ParallelArray.exe
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\bin\Debug\netcoreapp3.1\ParallelArray.deps.json
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\bin\Debug\netcoreapp3.1\ParallelArray.runtimeconfig.json
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\bin\Debug\netcoreapp3.1\ParallelArray.runtimeconfig.dev.json
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\bin\Debug\netcoreapp3.1\ParallelArray.dll
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\bin\Debug\netcoreapp3.1\ParallelArray.pdb
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.csprojAssemblyReference.cache
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.AssemblyInfoInputs.cache
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.AssemblyInfo.cs
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.csproj.CoreCompileInputs.cache
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.dll
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.pdb
+C:\Users\Dave\source\repos\ParallelArray\ParallelArray\obj\Debug\netcoreapp3.1\ParallelArray.genruntimeconfig.cache
