@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using Autofac;
+using SecondProject;
 
 namespace AutofacFirstUse
 {
@@ -12,8 +15,15 @@ namespace AutofacFirstUse
         {
             var builder = new ContainerBuilder();
             builder.RegisterType<ConsoleOutput>().As<IOutput>();
-            builder.RegisterType<Teacher>().As<IPerson>();
-            builder.RegisterType<Student>().As<IPerson>();
+
+            /*builder.RegisterType<Teacher>().As<IPerson>();
+            builder.RegisterType<Student>().As<IPerson>();*/
+
+            var dataAccess = typeof(IPerson).Assembly; //ukazuje na assembly kde autofac bude hledat komponenty k registraci  
+
+            builder.RegisterAssemblyTypes(dataAccess)
+                .Where(t => t.GetInterfaces().Any(i => i.IsAssignableFrom(typeof(IPerson))))
+                .AsImplementedInterfaces();
             Container = builder.Build();
 
             var persons = Container.Resolve<IEnumerable<IPerson>>();
@@ -26,50 +36,4 @@ namespace AutofacFirstUse
         }
     }
 
-    public interface IOutput
-    {
-        void Write(string content);
-    }
-
-    public class ConsoleOutput : IOutput
-    {
-        public void Write(string content)
-        {
-            Console.WriteLine(content);
-        }
-    }
-
-
-    public interface IPerson
-    {
-        void WriteClassName();
-    }
-
-
-    public class Teacher : IPerson
-    {
-        private IOutput _output;
-        public Teacher(IOutput output)
-        {
-            _output = output;
-        }
-
-        public void WriteClassName()
-        {
-            _output.Write(GetType().Name);
-        }
-    }
-    public class Student : IPerson
-    {
-        /*private IOutput _output;
-        public Student(IOutput output)
-        {
-            _output = output;
-        }*/
-
-        public void WriteClassName()
-        {
-            Console.WriteLine(GetType().Name);
-        }
-    }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofacFirstUse", "AutofacFirstUse.csproj", "{A45A2065-B144-4917-85E5-BDBA77B58832}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutofacFirstUse", "AutofacFirstUse.csproj", "{A45A2065-B144-4917-85E5-BDBA77B58832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondProject", "..\SecondProject\SecondProject.csproj", "{DC91DDFF-1B35-4483-8B35-441359F89383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A45A2065-B144-4917-85E5-BDBA77B58832}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A45A2065-B144-4917-85E5-BDBA77B58832}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A45A2065-B144-4917-85E5-BDBA77B58832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC91DDFF-1B35-4483-8B35-441359F89383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC91DDFF-1B35-4483-8B35-441359F89383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC91DDFF-1B35-4483-8B35-441359F89383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC91DDFF-1B35-4483-8B35-441359F89383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
