@@ -24,6 +24,7 @@ namespace AutofacFirstUse
             builder.RegisterAssemblyTypes(dataAccess)
                 .Where(t => t.GetInterfaces().Any(i => i.IsAssignableFrom(typeof(IPerson))))
                 .AsImplementedInterfaces();
+
             Container = builder.Build();
 
             var persons = Container.Resolve<IEnumerable<IPerson>>();
